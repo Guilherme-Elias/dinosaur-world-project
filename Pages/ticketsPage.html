@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaur World | Tickets</title>
+    <link rel="shortcut icon" href="/Images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Styles/ticketsPageStyle.css">
+</head>
+<body>
+
+    <!-- Logo Section -->
+    <div id="logo-section">
+        <img src="/Images/logo.png" id="logo-image">
+    </div>
+
+    <!-- Navigation Bar Section -->
+    <div id="navigation-bar">
+
+        <a href="/Pages/index.html" class="link">Home Page</a>
+        <a href="/Pages/ridesPage.html" class="link">Our Rides</a>
+        <a href="/Pages/eventsPage.html" class="link">Next Events</a>
+
+        <select name="" id="language-selector">
+            <option value="">SELECT YOUR LANGUAGE HERE</option>
+            <option value="">ENGLISH</option>
+            <option value="">PORTUGUÊS</option>
+            <option value="">ESPAÑOL</option>
+            <option value="">FRANÇAIS</option>
+        </select>
+
+    </div>
+
+    <!-- price time table section -->
+    <section id="price-time-tables-section">
+
+        <h1 class="titles">Events' prices and timing</h1>
+
+        <div class="table-div">
+            <table class="tables">
+
+                <thead>
+                    <tr>
+                        <th>Event name</th>
+                        <th>Full price</th>
+                        <th>Kids price</th>
+                        <th>Dates</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Halloween</td>
+                        <td>&dollar;150.00</td>
+                        <td>&dollar;90.00</td>
+                        <td>October 31st</td>
+                    </tr>
+                    <tr>
+                        <td>Christmas</td>
+                        <td>&dollar;180.00</td>
+                        <td>&dollar;120.00</td>
+                        <td>12/24 - 12/29</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <h1 class="titles">General Facilities Information</h1>
+
+        <div class="table-div">
+            <table class="tables">
+
+                <thead>
+                    <tr>
+                        <th>Pass name</th>
+                        <th>Full price</th>
+                        <th>Kids price</th>
+                        <th>Priority</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Standard</td>
+                        <td>&dollar;82.50</td>
+                        <td>&dollar;42.75</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Deluxe</td>
+                        <td>&dollar;100.00</td>
+                        <td>&dollar;70.00</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <div id="info">
+            <p>The prices refer to the value of each ticket that is attributed only for one person and are not valid anymore after one day period.</p>
+            <p>For every store or restaurant, the price is given by item and payed separately.</p>
+        </div>
+
+    </section>
+
+    <!-- buying section -->
+    <section id="buying-section">
+
+        <h1>Buy your tickets here</h1>
+
+        <div id="shopping-selection">
+
+            <div class="divs">
+                <label for="name_">Type your name below</label>
+                <input type="text" name="name_" id="name">
+            </div>
+
+            <div class="divs">
+                <label for="">Select the product</label>
+                <select name="" id="selector">
+                    <option value="">-- Select your product --</option>
+                    <option value="">Halloween Event Ticket</option>
+                    <option value="">Christmas Event Ticket</option>
+                    <option value="">Standard Ticket</option>
+                    <option value="">Deluxe Ticket</option>
+                </select>
+            </div>
+
+            <div class="divs">
+                <label for="">Type the quantity</label>
+                <input type="number" name="" id="qnt" min="0" max="100">
+            </div>
+
+            <div class="divs" id="checkbox-div">
+                <label for="">Kids price?</label>
+                <input type="checkbox" id="checkbox">
+            </div>
+
+            <button id="cart-button">Add to Cart</button>
+
+        </div>
+
+
+        <div id="shopping-cart">
+            <div id="products">
+                <p>Your cart:</p>
+            </div>
+            <h1 id="total">Total: &dollar;0.00</h1>
+            <button id="pay-button">Proceed for Payment</button>
+        </div>
+
+    </section>
+
+    <script src="/Scripts/shopping_cart_script.js"></script>
+    <script src="/Scripts/payment_script.js"></script>
+    <!-- gerar um id aleatório de transferencia e colocar um alert sobre os ingressos por email -->
+
+</body>
+</html>
